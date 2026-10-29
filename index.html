@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start Systems</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  :root {
+    --bg: #000000;
+    --green: #00FF00;
+    --text: #c9c9c9;
+    --muted: #8a8a8a;
+    --line: #1f1f1f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  header { padding: 72px 0 0; }
+  .logo {
+    height: 1.5em;
+    width: auto;
+    vertical-align: -0.4em;
+    margin-right: 9px;
+  }
+  .mark {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    margin: 0 0 36px;
+  }
+  .cursor {
+    display: inline-block;
+    width: 0.6em;
+    height: 1em;
+    background: var(--green);
+    vertical-align: text-bottom;
+    margin-left: 4px;
+    animation: blink 1.1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .cursor { animation: none; }
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 20px;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--muted);
+    margin: 0 0 48px;
+  }
+  h2 {
+    font-size: 14px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    margin: 48px 0 16px;
+  }
+  h2::before {
+    content: "> ";
+    opacity: 0.6;
+  }
+  p { margin: 0 0 16px; }
+  ul {
+    margin: 0 0 16px;
+    padding-left: 0;
+    list-style: none;
+  }
+  li {
+    margin-bottom: 8px;
+    padding-left: 22px;
+    position: relative;
+  }
+  li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+  }
+  a { color: var(--green); }
+  a:hover { background: var(--green); color: var(--bg); text-decoration: none; }
+  footer {
+    margin-top: 72px;
+    padding: 24px 0 64px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: var(--muted);
+  }
+  footer a { margin-right: 24px; }
+  @media (max-width: 480px) {
+    header { padding-top: 48px; }
+    h1 { font-size: 23px; }
+    .lede { font-size: 16px; }
+    body { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="mark"><img src="logo.png" alt="" class="logo">Start Systems<span class="cursor"></span></p>
+    <h1>Automation for real estate professionals.</h1>
+    <p class="lede">Start Systems builds custom automations that take repetitive work off the desks of wholesalers, agents, and investors.</p>
+  </header>
+
+  <main>
+    <h2>What we do</h2>
+    <p>We design and build workflow automations tailored to how a business already operates — connecting the tools a team uses so that routine work happens without anyone having to do it by hand.</p>
+    <ul>
+      <li>Lead generation and enrichment pipelines</li>
+      <li>Calendar, task, and scheduling assistants</li>
+      <li>Daily briefings that pull from email, calendar, and documents</li>
+      <li>Content scheduling and publishing</li>
+    </ul>
+
+    <h2>Who it's for</h2>
+    <p>Real estate professionals in the Florida panhandle and beyond who are spending hours on work a system could handle.</p>
+
+    <h2>Get in touch</h2>
+    <p>Email <a href="mailto:hello@startsystems.dev">hello@startsystems.dev</a>.</p>
+  </main>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+
+</div>
+</body>
+</html>
